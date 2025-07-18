@@ -79,8 +79,60 @@ const Home = () => {
             </button>
           </div>
         </Sider>
-        <Content className="content">Content</Content>
-        <Footer className="foot flex w-1/10 justify-center">
+        <Content style={{ width: "40%" }} className="content">
+          <div>
+            <h1 className="text-7xl text-white">
+              <b>
+                Transforming Your Ideas into{" "}
+                <span style={{ color: "rgb(145, 75, 241)" }}>Reality</span>
+              </b>
+            </h1>
+            <p className="text-white text-2xl mt-5">
+              Passionate about creating intuitive and engaging user experiences.
+              Specialize in transforming ideas into beautifully crafted
+              products.
+            </p>
+            <div className="flex text-white gap-16 font-bold mt-10 ">
+              <div className="exprince flex flex-col">
+                <h5>+12</h5>
+                <h6>YEARS OF EXPERIENCE</h6>
+              </div>
+              <div className=" exprince flex flex-col">
+                <h5>+46</h5>
+                <h6>PROJECTS COMPLETED</h6>
+              </div>
+              <div className="exprince flex flex-col">
+                <h5>+20</h5>
+                <h6>WORLDWIDE CLIENTS</h6>
+              </div>
+            </div>
+            <div className="flex gap-5 mt-10 items-center">
+              <button className="btn px-6 py-2 rounded-full bg-purple-600 hover:bg-purple-700 text-white transition-all duration-200">
+                <span className="text">Let's Talk</span>
+              </button>
+              <div>
+                <button className="cta flex flex-row items-center">
+                  <span className="hover-underline-animation"> Shop now </span>
+                  <svg
+                    id="arrow-horizontal"
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="30"
+                    height="10"
+                    viewBox="0 0 46 16"
+                  >
+                    <path
+                      id="Path_10"
+                      data-name="Path 10"
+                      d="M8,0,6.545,1.455l5.506,5.506H-30V9.039H12.052L6.545,14.545,8,16l8-8Z"
+                      transform="translate(30)"
+                    ></path>
+                  </svg>
+                </button>
+              </div>
+            </div>
+          </div>
+        </Content>
+        <Footer className="foot flex w-1/5 justify-center">
           <div className="button-cv">
             <a href="#" className="anchor">
               <span>Download CV</span>
