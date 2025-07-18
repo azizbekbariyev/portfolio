@@ -20,9 +20,10 @@
   width: 344px;
   height: 640px;
   border-radius: 30px;
-  background: #212121;
-  box-shadow: 15px 15px 30px rgb(25, 25, 25), -15px -15px 30px rgb(60, 60, 60);
+  background: rgb(39, 40, 14);
   margin-left: auto;
+  position: sticky;
+  top: 40px;
 }
 
 #sider {
@@ -83,4 +84,54 @@
 
 .btn:active {
   transform: scale(0.9);
+}
+
+/* From Uiverse.io by Codecite */ 
+.anchor {
+  text-decoration: none;
+  color: #fff;
+  display: inline-block;
+  font-family: sans-serif;
+  font-weight: 600;
+  border-radius: 50px;
+  border: 2px solid #ed553b;
+  padding: 14px 40px 13px;
+  overflow: hidden;
+  position: relative;
+}
+
+.anchor:hover {
+  color: #4e484a;
+}
+
+.button-cv a::before {
+  position: absolute;
+  content: "";
+  z-index: 0;
+  background-color: #ed553b;
+  left: -5px;
+  right: -5px;
+  bottom: -5px;
+  height: 111%;
+  transition: all .3s ease;
+}
+
+.button-cv a:hover::before {
+  height: 11%;
+}
+
+.button-cv span {
+  position: relative;
+  z-index: 2;
+  transition: all .3s ease;
+}
+
+.foot{
+  background-color: rgb(16, 17, 18);
+}
+
+.button-cv{
+  position: fixed;
+  bottom: 0px;
+  margin: 10px;
 }

@@ -13,6 +13,7 @@ import {
   Linkedin,
   Github,
 } from "lucide-react";
+import { Footer } from "antd/es/layout/layout";
 
 const Home = () => {
   return (
@@ -45,7 +46,6 @@ const Home = () => {
           style={{
             backgroundColor: "rgb(16, 17, 18)",
             padding: "30px 20px",
-            height: "100vh",
           }}
         >
           <div className="card ml-auto flex flex-col items-center gap-10 text-white">
@@ -74,14 +74,19 @@ const Home = () => {
                 </button>
               </div>
             </div>
-
             <button className="btn px-6 py-2 rounded-full bg-purple-600 hover:bg-purple-700 text-white transition-all duration-200">
               <span className="text">Let's Talk</span>
             </button>
           </div>
         </Sider>
-
         <Content className="content">Content</Content>
+        <Footer className="foot flex w-1/10 justify-center">
+          <div className="button-cv">
+            <a href="#" className="anchor">
+              <span>Download CV</span>
+            </a>
+          </div>
+        </Footer>
       </Layout>
     </Layout>
   );
